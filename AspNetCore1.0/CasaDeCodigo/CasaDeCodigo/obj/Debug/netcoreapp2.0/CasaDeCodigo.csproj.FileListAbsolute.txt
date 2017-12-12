@@ -9,3 +9,14 @@ C:\Users\Ramon Pereira\Desktop\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj
 C:\Users\Ramon Pereira\Desktop\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.AssemblyInfo.cs
 C:\Users\Ramon Pereira\Desktop\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.dll
 C:\Users\Ramon Pereira\Desktop\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.pdb
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\bin\Debug\netcoreapp2.0\CasaDeCodigo.deps.json
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\bin\Debug\netcoreapp2.0\CasaDeCodigo.runtimeconfig.json
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\bin\Debug\netcoreapp2.0\CasaDeCodigo.runtimeconfig.dev.json
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\bin\Debug\netcoreapp2.0\CasaDeCodigo.dll
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\bin\Debug\netcoreapp2.0\CasaDeCodigo.pdb
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.csprojResolveAssemblyReference.cache
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.csproj.CoreCompileInputs.cache
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.AssemblyInfoInputs.cache
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.AssemblyInfo.cs
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.dll
+C:\Alura\AspNetCore1.0\CasaDeCodigo\CasaDeCodigo\obj\Debug\netcoreapp2.0\CasaDeCodigo.pdb

@@ -6203,7 +6203,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration/2.0.0": {
-      "sha512": "SsI4RqI8EH00+cYO96tbftlh87sNUv1eeyuBU1XZdQkG0RrHAOjWgl7P0FoLeTSMXJpOnfweeOWj2d1/5H3FxA==",
+      "sha512": "+xqNnxSx4ilCL34TkbnZjPRDMZrR3WaQY+9qBe+1qvt/A7Izp3f8gu3DeViRQkJWQoJUeqK+9Oi9t+564/temw==",
       "type": "package",
       "path": "microsoft.extensions.configuration/2.0.0",
       "files": [
@@ -6866,7 +6866,7 @@
       ]
     },
     "Microsoft.IdentityModel.Logging/1.1.4": {
-      "sha512": "j7t22EsDOuo0IXqAbp6ijdB1GuaY8cu3YoPNZpymOhUMTVC+wRTV0IHqxL31HacCnJHU/igsqe70fDKZgZu3oA==",
+      "sha512": "kpPKN8fCsnaQYbZ5aP1M5kGswZMrdNH33GCl9PDhni2yrGwYc71SqhnlKsM8EgvWXlWDm3yujrnVPODwdwsmFA==",
       "type": "package",
       "path": "microsoft.identitymodel.logging/1.1.4",
       "files": [
@@ -6911,7 +6911,7 @@
       ]
     },
     "Microsoft.IdentityModel.Tokens/5.1.4": {
-      "sha512": "SsJbZVPvjSlKFDAQmR2wpL6ZD/vCFlIsf0jxRlBJwyzKXZy3Wi/Xo+fE2MzAerLsJgG1UCdtplRwqDyq1euayw==",
+      "sha512": "Re6J1mgkrrmbxs/hbxAJtQaVuHu4HgGnXVvU4gokhEIjjO1YaMntOXjjvds13qYz68HPjOPVeygOPUB92Ak9AQ==",
       "type": "package",
       "path": "microsoft.identitymodel.tokens/5.1.4",
       "files": [
@@ -7522,7 +7522,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+      "sha512": "yew/BgutvRvLQMiqZetT+crDKdd8ENPbU8tOgagB7Hyme+CDln2Gsv7b7jbOg6fR1rsz/J6ksh5hC+abH6zbPA==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "files": [
@@ -9190,7 +9190,7 @@
       ]
     },
     "System.IdentityModel.Tokens.Jwt/5.1.4": {
-      "sha512": "hLUU1N99aL9uyxiTraBnCKlpUKsbP/+5ygD7cswspH9/+M7fAAL0hRzt2aA4w7VEQlSSiu8j+xWFk3NRcqhfQQ==",
+      "sha512": "+XZBcnfUe4Vd9iF+eqxIe8Uf/dz23ttf1S0YpFslm/Mthum0rfM/ocZCyoR+h/MP9moOgWqXJeujajPvTGb6hQ==",
       "type": "package",
       "path": "system.identitymodel.tokens.jwt/5.1.4",
       "files": [
@@ -10890,7 +10890,7 @@
       ]
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
-      "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
+      "sha512": "z4502Gv4nRcLK3sEc+nBqEFn48xi1RRPPmAQd8RSHKIfPdblb5AQT02qSAAH5JESovSyQ6UecpsY0CwMJJxYGQ==",
       "type": "package",
       "path": "system.runtime.serialization.formatters/4.3.0",
       "files": [
@@ -12534,7 +12534,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ramon Pereira\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12543,17 +12543,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ramon Pereira\\Desktop\\Alura\\AspNetCore1.0\\CasaDeCodigo\\CasaDeCodigo\\CasaDeCodigo.csproj",
+      "projectUniqueName": "C:\\Alura\\AspNetCore1.0\\CasaDeCodigo\\CasaDeCodigo\\CasaDeCodigo.csproj",
       "projectName": "CasaDeCodigo",
-      "projectPath": "C:\\Users\\Ramon Pereira\\Desktop\\Alura\\AspNetCore1.0\\CasaDeCodigo\\CasaDeCodigo\\CasaDeCodigo.csproj",
-      "packagesPath": "C:\\Users\\Ramon Pereira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ramon Pereira\\Desktop\\Alura\\AspNetCore1.0\\CasaDeCodigo\\CasaDeCodigo\\obj\\",
+      "projectPath": "C:\\Alura\\AspNetCore1.0\\CasaDeCodigo\\CasaDeCodigo\\CasaDeCodigo.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Alura\\AspNetCore1.0\\CasaDeCodigo\\CasaDeCodigo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ramon Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12579,7 +12579,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0",
+            "version": "2.0.0",
             "autoReferenced": true
           },
           "Microsoft.AspNetCore.All": {

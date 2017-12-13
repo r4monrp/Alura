@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Carrinho";
 }
+@model List<ItemPedido>;
 <h3>Meu Carrinho</h3>
 <div class="panel panel-default">
     <div class="panel-heading">
@@ -20,29 +21,34 @@
         </div>
     </div>
     <div class="panel-body">
-        <div class="col-md-3">
-            <img src="~/images/produtos/large_4.jpg" />
-        </div>
-        <div class="col-md-3">
-            REST
-        </div>
-        <div class="col-md-2">
-            R$70,00
-        </div>
-        <div class="col-md-2">
-            3
-        </div>
-        <div class="col-md-2 ">
-            <span class="pull-right">R$210,00</span>
-        </div>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="~/images/produtos/small_@(item.Id).jpg" />
+                </div>
+                <div class="col-md-3">
+                    @item.Produto.Nome
+                </div>
+                <div class="col-md-2">
+                    @item.Produto.Preco.ToString("C")
+                </div>
+                <div class="col-md-2">
+                    @item.Quantidade
+                </div>
+                <div class="col-md-2 ">
+                    <span class="pull-right">@item.SubTotal.ToString("C")</span>
+                </div>
+            </div>
+        }
     </div>
     <div class="panel-footer">
         <div class="row">
             <div class="col-md-10">
-                Total: 3 itens
+                Total: @(Model.Select(q=>q.Quantidade).Sum()) Itens
             </div>
             <div class="col-md-2">
-                R$210,00
+                @(Model.Select(q => q.SubTotal).Sum().ToString("C"))
             </div>
         </div>
     </div>

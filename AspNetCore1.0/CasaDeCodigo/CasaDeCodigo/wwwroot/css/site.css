@@ -52,6 +52,11 @@
     border-color: white;
 }
 
-    .navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
         color: white;
-    }
+}
+
+.row-center {
+    display:flex;
+    align-items: center;
+}

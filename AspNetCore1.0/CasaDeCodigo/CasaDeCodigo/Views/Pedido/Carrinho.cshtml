@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Carrinho";
 }
-@model List<ItemPedido>;
+@model CasaDeCodigo.Models.ViewModels.CarrinhoViewModel;
 <h3>Meu Carrinho</h3>
 <div class="panel panel-default">
     <div class="panel-heading">
@@ -9,10 +9,10 @@
             <div class="col-md-6 text-center">
                 <span>Item</span>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 text-center">
                 <span>Valor Unit.</span>
             </div>
-            <div class="col-md-2 ">
+            <div class="col-md-2 text-center">
                 <span>Quantidade</span>
             </div>
             <div class="col-md-2 ">
@@ -21,34 +21,35 @@
         </div>
     </div>
     <div class="panel-body">
-        @foreach (var item in Model)
+        @foreach (var item in Model.Itens)
         {
-            <div class="row">
+            <div class="row row-center">
                 <div class="col-md-3">
                     <img src="~/images/produtos/small_@(item.Id).jpg" />
                 </div>
                 <div class="col-md-3">
                     @item.Produto.Nome
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center">
                     @item.Produto.Preco.ToString("C")
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center">
                     @item.Quantidade
                 </div>
                 <div class="col-md-2 ">
                     <span class="pull-right">@item.SubTotal.ToString("C")</span>
                 </div>
             </div>
+            <hr/>
         }
     </div>
     <div class="panel-footer">
         <div class="row">
             <div class="col-md-10">
-                Total: @(Model.Select(q=>q.Quantidade).Sum()) Itens
+                <span class="pull-right">Total: @(Model.Itens.Count()) @((Model.Itens.Count() > 1) ? "Itens" : "Item")</span>
             </div>
             <div class="col-md-2">
-                @(Model.Select(q => q.SubTotal).Sum().ToString("C"))
+                <span class="pull-right"> @(Model.Total.ToString("C"))</span>
             </div>
         </div>
     </div>

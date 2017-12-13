@@ -1,4 +1,5 @@
 ﻿using CasaDeCodigo.Models;
+using CasaDeCodigo.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -29,20 +30,26 @@ namespace CasaDeCodigo.Controllers
 
         public IActionResult Carrinho()
         {
-            var itenscarrinho = new List<ItemPedido>()
+            CarrinhoViewModel carrinho = GetCarrinhoViewModel();
+
+            return View(carrinho);
+        }
+
+        private CarrinhoViewModel GetCarrinhoViewModel()
+        {
+            return new CarrinhoViewModel(new List<ItemPedido>()
             {
                 new ItemPedido(1, produtos[0],1),
                 new ItemPedido(2, produtos[1],2),
                 new ItemPedido(3, produtos[2],3)
 
-            };
-
-            return View(itenscarrinho);
+            });
         }
 
         public IActionResult Resumo()
         {
-            return View();
+            CarrinhoViewModel carrinho = GetCarrinhoViewModel();
+            return View(carrinho);
         }
     }
 }

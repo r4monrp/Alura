@@ -13,6 +13,11 @@ namespace CasaDeCodigo.Models
         public decimal PrecoUnitatio { get; private set; }
         public decimal SubTotal { get { return Quantidade * PrecoUnitatio; } }
 
+        public ItemPedido()
+        {
+                
+        }
+
         public ItemPedido(int id, Produto produto,int quantidade) : this(produto,quantidade)
         {
             this.Id = id;

@@ -10,35 +10,44 @@ namespace CasaDeCodigo.Controllers
 {
     public class PedidoController : Controller
     {
+        private readonly IDataService _dataService;
 
+        public PedidoController(IDataService dataService)
+        {
+            _dataService = dataService;
+        }
 
         public IActionResult Carrossel()
         {
+            var produtos = _dataService.GetProdutos();
+
             return View(produtos);
         }
 
+
         public IActionResult Carrinho()
         {
-            CarrinhoViewModel carrinho = GetCarrinhoViewModel();
-
-            return View(carrinho);
-        }
-
-        private CarrinhoViewModel GetCarrinhoViewModel()
-        {
-            return new CarrinhoViewModel(new List<ItemPedido>()
-            {
-                new ItemPedido(1, produtos[0],1),
-                new ItemPedido(2, produtos[1],2),
-                new ItemPedido(3, produtos[2],3)
-
-            });
+            CarrinhoViewModel viewModel = GetCarrinhoViewModel();
+            return View(viewModel);
         }
 
         public IActionResult Resumo()
         {
-            CarrinhoViewModel carrinho = GetCarrinhoViewModel();
-            return View(carrinho);
+            CarrinhoViewModel viewModel = GetCarrinhoViewModel();
+            return View(viewModel);
+        }
+
+
+        private CarrinhoViewModel GetCarrinhoViewModel()
+        {
+
+            var produtos = _dataService.GetProdutos();
+
+            var itensCarrinho = _dataService.GetItensPedido();
+
+            CarrinhoViewModel viewModel = new CarrinhoViewModel(itensCarrinho);
+
+            return viewModel;
         }
     }
 }

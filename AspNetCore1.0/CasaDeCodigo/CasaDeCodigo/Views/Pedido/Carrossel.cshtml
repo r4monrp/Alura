@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Carrossel";
 }
-
+@model List<Produto>
 <h3>Catálogo</h3>
 <div id="my-carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -13,56 +13,43 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="row">
-                @for (int i = 1; i < 5; i++)
-                {
-                    <div class="col-md-3">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <img class="img-responsive" src="~/images/produtos/large_@(Model[i].Id).jpg" />
-                            </div>
-                            <div class="panel-footer">
-                                <div class="text-center">
-                                    <h5><span>@(Model[i].Nome)</span></h5>
+        @{
+            const int tamanhoPag = 4;
+            int numPag = (int)Math.Ceiling((double)Model.Count / tamanhoPag);
+        }
+        @for (int pagina = 0; pagina < numPag; pagina++)
+        {
+            <div class="item @(pagina == 1 ? "active" : "")">
+                <div class="row">
+                    @{
+                        var produtosTotal = Model.Skip(tamanhoPag * pagina).Take(tamanhoPag);
+                    }
+
+                    @foreach (var produto in produtosTotal)
+                    {
+                        <div class="col-md-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <img class="img-responsive" src="~/images/produtos/large_@(produto.Id).jpg"  />
                                 </div>
-                                <div class="text-center">
-                                    <h5><span class="text-success">@(Model[i].Preco.ToString("C"))</span></h5>
-                                </div>
-                                <div class="text-center">
-                                    <a asp-action="Carrinho" asp-controller="Pedido" class="btn btn-warning">Adicionar ao carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
-        <div class="item">
-            <div class="row">
-                @for (int i = 5; i < 9; i++)
-                {
-                    <div class="col-md-3">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <img class="img-responsive" src="~/images/produtos/large_@(Model[i].Id).jpg" />
-                            </div>
-                            <div class="panel-footer">
-                                <div class="text-center">
-                                    <h5><span>@(Model[i].Nome)</span></h5>
-                                </div>
-                                <div class="text-center">
-                                    <h5><span class="text-success">@(Model[i].Preco.ToString("C"))</span></h5>
-                                </div>
-                                <div class="text-center">
-                                    <a asp-action="Carrinho" asp-controller="Pedido" class="btn btn-warning">Adicionar ao carrinho</a>
+                                <div class="panel-footer">
+                                    <div class="text-center">
+                                        <h5><span>@(produto.Nome)</span></h5>
+                                    </div>
+                                    <div class="text-center">
+                                        <h5><span class="text-success">@(produto.Preco.ToString("C"))</span></h5>
+                                    </div>
+                                    <div class="text-center">
+                                        <a asp-action="Carrinho" asp-controller="Pedido" class="btn btn-warning">Adicionar ao carrinho</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
             </div>
-        </div>
+        }
+
         <!-- Controls -->
         <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
